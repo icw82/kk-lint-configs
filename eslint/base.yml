@@ -176,7 +176,7 @@ rules:
   jsdoc/check-param-names:
     - error
 
-  check-property-names:
+  jsdoc/check-property-names:
     - error
 
   # jsdoc/require-examples:
@@ -194,4 +194,3 @@ rules:
         FunctionExpression: true
         MethodDefinition: true
       checkConstructors: false
-
