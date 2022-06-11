@@ -1,16 +1,25 @@
 env:
   browser: true
+  amd: true
+
 plugins:
   - es5
+  - amd
+
 extends:
   - plugin:es5/no-es2015
+
 parserOptions:
-  ecmaVersion: 5
+  ecmaVersion: 2015
+
 rules:
+  max-params:
+    - off
+
   indent:
-    - error
-    - 3
-    - SwitchCase: 1
+    - off
+  #   - 3
+  #   - SwitchCase: 1
 
   no-multiple-empty-lines:
     - error

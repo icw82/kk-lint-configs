@@ -7,6 +7,9 @@ env:
 extends:
   - 'eslint:recommended'
 
+parserOptions:
+  sourceType: script
+
 plugins:
   - import
   - jsdoc
@@ -75,6 +78,10 @@ rules:
 
   comma-spacing: error
 
+  comma-dangle:
+    - error
+    - always
+
   object-shorthand:
     - error
     - always
@@ -82,7 +89,7 @@ rules:
 
   no-invalid-this: error
   no-this-before-super: error
-  class-methods-use-this: error
+  class-methods-use-this: warn
 
   prefer-arrow-callback: error
 
@@ -168,10 +175,10 @@ rules:
   jsdoc/check-alignment:
     - error
 
-  jsdoc/check-indentation:
-    - error
-    - excludeTags:
-      - example
+  # jsdoc/check-indentation:
+  #   - warn
+  #   - excludeTags:
+  #     - 'example'
 
   jsdoc/check-param-names:
     - error
