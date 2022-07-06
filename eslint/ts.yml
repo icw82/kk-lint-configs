@@ -22,14 +22,7 @@ rules:
 
   '@typescript-eslint/comma-dangle':
     - error
-    - arrays: never
-      objects: never
-      imports: never
-      exports: never
-      functions: never
-      enums: never
-      generics: never
-      tuples: never
+    - always-multiline
 
   '@typescript-eslint/explicit-member-accessibility':
     - error

@@ -80,7 +80,7 @@ rules:
 
   comma-dangle:
     - error
-    - always
+    - always-multiline
 
   object-shorthand:
     - error
