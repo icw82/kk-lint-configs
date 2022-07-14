@@ -18,6 +18,9 @@ rules:
   no-multi-spaces:
     - error
 
+  key-spacing:
+    - error
+
   no-trailing-spaces: error
 
   space-infix-ops: error
@@ -131,6 +134,8 @@ rules:
   quote-props:
     - error
     - as-needed
+    -
+      keywords: true
 
   no-useless-concat: error
 
